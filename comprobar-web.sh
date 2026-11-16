@@ -6,4 +6,5 @@ echo "Web: $url"
 echo "Código HTTP: $codigo"
 echo "Fecha: $(date '%d/%m/%Y %H:%M')"
 echo "Tiempo: $(curl -s -o /dev/null -w "%{time_total}" "$url") s"
+echo "IP: $(curl -s -o /dev/null -w "%{remote_ip}" "$url")"
 
